@@ -22,8 +22,8 @@ namespace DepositProfit_CodeSignal_Arcade
             int count = 0;
             while(deposit < threshold)
             {
-                deposit = ((deposit * rate) / 100 ) + deposit;
                 count++;
+                deposit += deposit  * rate/ 100 ;
             }    
             return count;
         }
